@@ -2,7 +2,7 @@
 
 ## Installation
 
-This project has been tested on node v12. Other major versions may work, but for the smoothest experience v12 will serve you best. Otherwise, just `npm install` to install and `npm run dev` to start coding.
+This project has been tested on node v12. Other major versions may work, but for the smoothest experience v12 will serve you best. Otherwise, just `npm install` to install and `npm run dev` to start coding. The instructions are contained in the code, run the app to learn more.
 
 ## CLI Commands
 
