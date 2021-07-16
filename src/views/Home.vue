@@ -2,12 +2,16 @@
 	<div class="home hero is-fullheight-with-navbar is-light">
 		<div class="hero-body">
 			<div class="home__content">
-				<div class="subtitle is-2">Welcome to the</div>
+				<div>
+					Welcome to the
+				</div>
 				<img
 					class="home__logo"
 					src="./../assets/images/Groundfloor_Logo_Neg_2color_rgb.svg"
 				>
-				<div class="subtitle is-1">Coding Challenge</div>
+				<div>
+					Frontend Coding Challenge
+				</div>
 			</div>
 		</div>
 	</div>
@@ -17,15 +21,14 @@
 .home {
 	&__logo {
 		width:35rem;
+		margin-bottom:-.3rem;
 	}
 
 	&__content {
-		margin:0 auto;
+		margin:0 auto 5vh;
 		text-align:center;
-
-		.subtitle {
-			margin-bottom:.25rem !important;
-		}
+		font-weight: $weight-light;
+		font-size:$size-2;
 	}
 }
 </style>

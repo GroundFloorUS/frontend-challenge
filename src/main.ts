@@ -1,5 +1,11 @@
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faHandPaper } from '@fortawesome/free-solid-svg-icons';
+import {
+	faHandPaper,
+	faHorse,
+	faChevronLeft,
+	faChevronRight,
+	faDotCircle,
+} from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import Buefy from 'buefy';
 import Vue from 'vue';
@@ -11,6 +17,10 @@ import './assets/scss/app.scss';
 
 library.add(
 	faHandPaper,
+	faHorse,
+	faChevronLeft,
+	faChevronRight,
+	faDotCircle,
 );
 
 Vue.component('font-awesome-icon', FontAwesomeIcon);

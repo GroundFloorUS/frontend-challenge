@@ -19,14 +19,36 @@
 			<div class="app__sidebar">
 				<b-menu>
 					<b-menu-list>
-						<b-menu-item
-							icon="hand-paper"
-							label="Welcome"
-						/>
+						<router-link
+							v-slot="{ href, isExactActive }"
+							:to="{ name: namedRoutes.Home.name }"
+						>
+							<b-menu-item
+								icon="hand-paper"
+								label="Welcome"
+								tag="router-link"
+								:to="href"
+								:active="isExactActive"
+							/>
+						</router-link>
+						<router-link
+							v-slot="{ href, isExactActive }"
+							:to="{ name: namedRoutes.Carousel.name }"
+						>
+							<b-menu-item
+								icon="horse"
+								label="Carousel"
+								tag="router-link"
+								:to="href"
+								:active="isExactActive"
+							/>
+						</router-link>
 					</b-menu-list>
 				</b-menu>
 			</div>
-			<router-view class="app__view" />
+			<div class="app__content">
+				<router-view class="app__view" />
+			</div>
 		</div>
 	</div>
 </template>
@@ -52,20 +74,36 @@
 	}
 
 	&__main {
-		flex:1 0 auto;
+		flex:1 1 auto;
 		display:flex;
 		flex-direction:row;
 		align-items: stretch;
 	}
 
 	&__sidebar {
+		flex:0 0 auto;
 		width:14rem;
-		padding:2rem 1.5rem;
+		padding:1.5rem .75rem;
 		background:$white-bis;
 	}
 
-	&__view {
+	&__content {
 		flex:1 1 auto;
 	}
 }
 </style>
+
+<script lang="ts">
+import Vue from 'vue';
+
+import { namedRoutes } from '@/router';
+
+export default Vue.extend({
+	name: 'App',
+	data() {
+		return {
+			namedRoutes,
+		};
+	},
+});
+</script>
