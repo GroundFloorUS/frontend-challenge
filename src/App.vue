@@ -1,36 +1,71 @@
 <template>
-	<div id="app">
-		<div id="nav">
-			<router-link to="/">
-				Home
-			</router-link> |
-			<router-link to="/about">
-				About
-			</router-link>
+	<div class="app">
+		<b-navbar type="is-dark">
+			<template #brand>
+				<b-navbar-item
+					tag="router-link"
+					:to="{ path: '/' }"
+				>
+					<img
+						class="app-navbar__logo"
+						src="./assets/images/Groundfloor_symbol_neg.svg"
+						alt="Groundfloor Logo"
+					>
+					<span class="app-navbar__label">Coding Challenge</span>
+				</b-navbar-item>
+			</template>
+		</b-navbar>
+		<div class="app__main">
+			<div class="app__sidebar">
+				<b-menu>
+					<b-menu-list>
+						<b-menu-item
+							icon="hand-paper"
+							label="Welcome"
+						/>
+					</b-menu-list>
+				</b-menu>
+			</div>
+			<router-view class="app__view" />
 		</div>
-		<router-view />
 	</div>
 </template>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+.app {
+	display:flex;
+	flex-direction: column;
+	align-items: stretch;
+	min-height:100vh;
 
-#nav {
-  padding: 30px;
+	&-navbar {
+		&__logo {
+			width:36px;
+			max-height:initial !important;
+		}
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
+		&__label {
+			margin-left:.75rem;
+			font-size:$size-5;
+			font-weight:$weight-medium;
+		}
+	}
 
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+	&__main {
+		flex:1 0 auto;
+		display:flex;
+		flex-direction:row;
+		align-items: stretch;
+	}
+
+	&__sidebar {
+		width:14rem;
+		padding:2rem 1.5rem;
+		background:$white-bis;
+	}
+
+	&__view {
+		flex:1 1 auto;
+	}
 }
 </style>

@@ -3,28 +3,34 @@
 
 // Colors
 
-$black:        hsl(0, 0%, 4%) !default;
-$black-bis:    hsl(0, 0%, 7%) !default;
-$black-ter:    hsl(0, 0%, 14%) !default;
+$black:         hsl(0, 0%, 13%);
+$black-bis:     hsl(240, 1%, 25%);
+$black-ter:     hsl(240, 1%, 37%);
 
-$grey-darker:  hsl(0, 0%, 21%) !default;
-$grey-dark:    hsl(0, 0%, 29%) !default;
-$grey:         hsl(0, 0%, 48%) !default;
-$grey-light:   hsl(0, 0%, 71%) !default;
-$grey-lighter: hsl(0, 0%, 86%) !default;
+$grey-darker: #202020;
+$grey-dark: #404041;
+$grey: #6d7982;
+$grey-light: hsl(202, 18%, 70%);
+$grey-lighter: #dfebf0;
+$grey-lightest: hsl(200, 17%, 93%);
 
-$white-ter:    hsl(0, 0%, 96%) !default;
-$white-bis:    hsl(0, 0%, 98%) !default;
-$white:        hsl(0, 0%, 100%) !default;
+$white-ter: hsl(180, 8%, 95%);
+$white-bis: hsl(0, 0%, 98%);
+$white:         hsl(0, 0%, 100%);
 
-$orange:       hsl(14,  100%, 53%) !default;
-$yellow:       hsl(48,  100%, 67%) !default;
-$green:        hsl(141, 71%,  48%) !default;
-$turquoise:    hsl(171, 100%, 41%) !default;
-$cyan:         hsl(204, 86%,  53%) !default;
-$blue:         hsl(217, 71%,  53%) !default;
-$purple:       hsl(271, 100%, 71%) !default;
-$red:          hsl(348, 100%, 61%) !default;
+$orange: hsl(14, 100%, 53%);
+$yellow:        hsl(43, 100%, 62%);
+$green: #1bc15e;
+$lime: #91ce18;
+$turquoise:     hsl(171, 100%, 41%);
+$cyan: #29ccc7;
+$blue: #00baf8;
+$purple: #b179ff;
+$red:           hsl(348, 80%, 60%);
+
+$gf-blue: $blue;
+$gf-blue-dark: #1185cc;
+$gf-blue-light: #7fdcfb;
 
 // Typography
 
@@ -75,7 +81,7 @@ $variable-columns: true !default;
 
 // The default Bulma derived variables are declared below
 
-$primary: $turquoise !default;
+$primary: $gf-blue;
 
 $info: $cyan !default;
 $success: $green !default;
@@ -83,7 +89,7 @@ $warning: $yellow !default;
 $danger: $red !default;
 
 $light: $white-ter !default;
-$dark: $grey-darker !default;
+$dark: $grey-dark;
 
 // Invert colors
 

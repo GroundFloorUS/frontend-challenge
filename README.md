@@ -11,4 +11,7 @@ This project has been tested on node v12. Other major versions may work, but for
 
 ## Notes
 
-This is a fairly standard Vue CLI project with a few modifications added. The project has typescript, vuex, vue-router, [Buefy](https://buefy.org/documentation) and [Bulma](https://bulma.io/documentation/). Style resource loader is installed, so all Buefy/Bulma global scss variables are available in all components.
+This is a fairly standard Vue CLI project with a few modifications added. Here's some things to know. 
+* The project has typescript, vuex, vue-router, [Buefy](https://buefy.org/documentation) and [Bulma](https://bulma.io/documentation/).
+* Style resource loader is installed, so all Buefy/Bulma global scss variables are available in all components.
+* Fontawesome is in place for icons. To add additional icons you'll need to import them in `main.ts`.
