@@ -1,5 +1,7 @@
 # Groundfloor Frontend Coding Challenge
 
+Oh hi, I didn't see you there. Welcome to the challenge. This repo contains a simple Vue app that describes a problem and provides a space to solve it. Just fork the repo, install the app and run it locally to see the challenge itself. Once you're done make a pull request and we'll go over your app in the interview.
+
 ## Installation
 
 This project has been tested on node v12. Other major versions may work, but for the smoothest experience v12 will serve you best. Otherwise, just `npm install` to install and `npm run dev` to start coding. The instructions are contained in the code, run the app to learn more.
